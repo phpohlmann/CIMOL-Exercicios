@@ -1,0 +1,48 @@
+#musica {
+    display: flex;
+    color: darksalmon;
+    width:auto;
+}
+
+#tittle {
+    background-color: rgb(51, 56, 65);
+    text-align: center;
+    display: block;
+    color: rgb(74, 99, 33);
+    font-size: 300%;
+    width: auto;
+    height: auto;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);;
+    
+}
+
+#html {
+    background-color: rgb(39, 43, 49);
+}
+
+.divisao {
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+    border-color: rgb(51, 56, 65);
+    width: 98%;
+    height: 2px;
+    background-color: rgb(51, 56, 65); 
+    border: 20px;
+    
+}
+
+#oparagrafo {
+    text-align: center;
+    background-color: rgb(51, 56, 65);
+    width: auto;
+    height: auto;
+}
+
+#macaco {
+    display: flex;
+    height: auto;
+    width: auto;
+
+}
+    
+      

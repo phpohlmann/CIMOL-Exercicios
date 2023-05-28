@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Petshop Online</title>
+	<style>
+		.logo {
+			width: 200px;
+			left: 25px;
+			position: absolute;
+		}
+
+		.grid-container {
+			display: grid;
+			gap: 1.5rem;
+			margin: 0 auto;
+			grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+		}
+
+		.grid-item {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			overflow: hidden;
+		}
+
+		.grid-item img {
+			width: 100%;
+		}
+
+		.grid-item p {
+			text-align: center;
+		}
+
+		.usuario {
+			width: 50px;
+		}
+
+		.carrinho {
+			width: 50px;
+		}
+
+		.headerContainer {
+			text-align: right;
+			flex-direction: row;
+			display: flex;
+		}
+
+		ul {
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+		}
+
+		.animais {
+			color: yellow;
+		}
+
+		.rodapeEsquerda {
+			text-align: left
+		}
+
+		footer {
+			background-color: LightPink;
+		}
+
+	</style>
+
+</head>
+
+<body>
+	<header>
+		<div class="headerContainer">
+			<img
+				url="https://images.tcdn.com.br/files/496822/themes/245/img/settings/petshop_logo_atac.jpg?94013122541515cdb48b0d06a961ae58"
+				class="logo">
+			<p>🚚 Rastreio</p>
+
+
+
+			<p>
+				<img
+					url="https://e7.pngegg.com/pngimages/117/435/png-clipart-human-figure-icon-illustration-user-silhouette-my-account-icon-animals-black-thumbnail.png"
+					class="usuario">Minha conta
+			</p>
+			<p><img
+					url="https://png.pngtree.com/png-vector/20190926/ourmid/pngtree-shopping-cart-line-icon-vector-png-image_1744041.jpg"
+					class="carrinho">0</p>
+		</div>
+
+		<div class="navigation">
+			<nav>
+				<ul>
+					<li><a href="https://www.petshop.com.br/cachorros-ct-823-496822.htm">
+							<img url="https://images.tcdn.com.br/img/img_prod/496822/categoria_img_823_20210209201030.png">Cães</a>
+					</li>
+
+					<li class="animais">
+						<a href="https://www.petshop.com.br/gatos-ct-825-496822.htm">
+							<img url="https://images.tcdn.com.br/img/img_prod/496822/categoria_img_825_20210209201432.png">Gatos</a>
+					</li>
+
+					<li class="animais">
+						<a href="https://www.petshop.com.br/passaros-ct-827-496822.htm"><img
+								url="https://images.tcdn.com.br/img/img_prod/496822/categoria_img_827_20210209201133.png">Pássaros</a>
+					</li>
+
+					<li class="animais">
+						<a href="https://www.petshop.com.br/roedores-ct-829-496822.htm"><img
+								url="https://images.tcdn.com.br/img/img_prod/496822/categoria_img_829_20210209201344.png">Roedores</a>
+					</li>
+					<li class="animais">
+						<a href="https://www.petshop.com.br/-ct-1567-496822.htm"><img
+								url="https://images.tcdn.com.br/img/img_prod/496822/categoria_img_1567_20210209201052.png">Casa e
+							jardim</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+	<br>
+	<h2><strong>Destaques<strong></h2>
+
+	<section class="grid-container">
+
+		<div class="grid-item">
+			<img url="https://images.tcdn.com.br/img/img_prod/496822/sarniran_pet_30_ml_11701_1_20190612205637.png">
+			<p>Sarniran PEt Biofarm 30ml, R$9,90</p>
+
+		</div>
+		<div class="grid-item">
+			<img
+				url="https://images.tcdn.com.br/img/img_prod/496822/colirio_biofarm_20_ml_11691_1_9ddbce72782f926769e4d9ea5e35ef3b.png">
+			<p>Colírio Biofarm 20ml, R$12,90</p>
+
+		</div>
+		<div class="grid-item">
+			<img
+				url="https://images.tcdn.com.br/img/img_prod/496822/kit_shampoo_citronela_cond_powerdog_500_ml_12659_1_20190718113322.jpg">
+			<p>Shampoo Citronela + Cond Powerdog 500ml Citrosafe, R$8,90</p>
+
+		</div>
+		<div class="grid-item">
+			<img url="https://images.tcdn.com.br/img/img_prod/496822/shampoo_snout_coco_750_ml_11643_1_20190614152959.jpg">
+			<p>Shampoo Snout Coco 750ml Beefbone, R$5,90</p>
+
+
+		</div>
+	</section>
+
+
+	<footer>
+		<div class="rodapeEsquerda">
+			<p>A Petshop.com.br</p>
+			<p>Como comprar</p>
+			<p>Privacidade e Segurança da Informação</p>
+			<p>Depoimentos de Clientes</p>
+			<p>Notícias</p>
+			<p>Políticas de Desconto e Frete Grátis</p>
+			<p>Política de Devolução, Trocas e Reembolso</p>
+			<p>Política Frete Grátis</p>
+			<p>Contato</p>
+		</div>
+
+</body>
+
+
+</html>

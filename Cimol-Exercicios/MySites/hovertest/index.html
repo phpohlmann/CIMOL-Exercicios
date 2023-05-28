@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    .tooltip-container {
+  position: relative;
+  display: inline-block;
+  font-size: 2vw;
+}
+
+.tooltip {
+  visibility: hidden;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  border-radius: 4px;
+  padding: 8px;
+  position: fixed;
+  z-index: 1;
+  top: 50%;
+  left: 40%;
+  transform: translateX(-50%, -50%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.tooltip-container:hover .tooltip {
+  visibility: visible;
+  opacity: 1;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease;
+}
+
+.overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+  </style>
+  <title>Document</title>
+</head>
+<body>
+  <div class="tooltip-container">
+  <span class="tooltip">Texto da dica de ferramenta</span>
+  Hover sobre mim
+</div>
+<div class="overlay"></div>
+<script>
+  const tooltipContainer = document.querySelector('.tooltip-container');
+const overlay = document.querySelector('.overlay');
+
+tooltipContainer.addEventListener('mouseenter', function () {
+  overlay.classList.add('active');
+});
+
+tooltipContainer.addEventListener('mouseleave', function () {
+  overlay.classList.remove('active');
+});
+
+</script>
+</body>
+</html>

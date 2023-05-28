@@ -1,0 +1,275 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant:wght@300&family=PT+Sans&display=swap');
+
+* {
+  padding: 0;
+  margin: 0; 
+  box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+  width: 16px;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgb(245,232,72);
+}
+
+::-webkit-scrollbar-thumb {
+  background:rgb(39,95,175);
+  border-radius: 10px;
+  width: 13px;
+}
+
+
+header {
+  position: relative;
+  display: flex;
+  align-items:center;
+  background-color: rgb(39,95,175);
+  font-size: 1.5vw;
+  padding-bottom: 1.5%;
+  color: white;
+  box-shadow: inset 0px -10px 50px 0px rgba(0, 0, 0, 0.5);
+}
+
+.logo img {
+  position: absolute;
+  padding-top: 55%;
+  left: 20%;
+  transform: translate(-50%, -50%);
+  width: 27vw;
+  height: auto;
+
+}
+
+.text1 {
+  position: relative;
+  text-align: center;
+  width: 60%;
+  transform: translateX(-50%, -50%);
+  padding-top: 1%;
+  font-family: 'Cormorant', serif;
+}
+
+
+.logo {
+  position: relative;
+  width: 20%;
+  left: 5%;
+}
+
+.links {
+  background-color: rgb(245,232,72);
+  padding: 1.5%;
+}
+
+.listaLinks {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin-left: 20%;
+  list-style: none;
+  font-size: 1.7vw;
+  font-family: 'PT Sans', sans-serif;
+}
+
+.listaLinks li img {
+  position: absolute;
+  top: 1.2vw;
+  right: 3vw;
+  width: 9vw;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+main{
+  background-image: url(images/escola.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: space-between;
+  height: 73vw;
+}
+
+.course-container{
+  box-shadow: 5px 5px 20px 0px rgba(0, 0, 0, 0.5), -5px -5px 20px 10px rgba(0, 0, 0, 0.3);
+  display: grid;
+  grid-template-areas:
+    "curso  curso"
+    "item1  item2"
+    "item3  item4"
+    "item5  item6"
+    "item7  item8";
+  top: 4vw;
+  position: relative;
+}
+
+.item1 { grid-area: item1; background-color: rgb(39,95,175); padding: 1vw; padding-bottom: 17.4%;}
+.item2 { grid-area: item2; background-color: rgb(67,137,221); padding: 1vw;}
+.item3 { grid-area: item3; background-color: rgb(67,137,221); padding: 1vw;}
+.item4 { grid-area: item4; background-color: rgb(39,95,175); padding: 1vw; padding-bottom: 10.5%;}
+.item5 { grid-area: item5; background-color: rgb(39,95,175); padding: 1vw;}
+.item6 { grid-area: item6; background-color: rgb(67,137,221); padding: 1vw;}
+.item7 { grid-area: item7; background-color: rgb(67,137,221); padding: 1vw;}
+.item8 { grid-area: item8; background-color: rgb(39,95,175); padding: 1vw; padding-bottom: 14.2%;}
+
+.item {
+  width: 10vw;
+}
+
+.cursoTitulo {
+  font-family: 'PT Sans', sans-serif;
+  grid-area: curso;
+  text-align: center;
+  background-color: rgb(245,232,72);
+  font-size: 2.5vw;
+  border-top-left-radius: 10px;
+}
+
+
+.noticias {
+  background-color: rgb(67,137,221);
+  position: relative;
+  width: 75vw;
+  height: 15vw;
+  top: 55vw;
+  border-top-right-radius: 20%;
+  box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.5), -10px -10px 20px 5px rgba(0, 0, 0, 0.7);
+}
+
+
+.noticiasTitulo {
+  font-family: 'PT Sans', sans-serif;
+  background-color: rgb(216,164,62);
+  display: inline;
+  position: relative;
+  top: -3vw;
+  padding: 1.5vw;
+  font-size: 3vw;
+  border-top-right-radius: 20%;
+  box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.5), -5px -5px 10px 0px rgba(0, 0, 0, 0.3);
+}
+
+.nots {
+  font-family: 'PT Sans', sans-serif;
+  display: flex;
+  position: relative;
+  height: 13vw;
+  z-index: 2;
+  justify-content: space-evenly;
+}
+
+.not {
+  background-color: rgb(237,181,83);
+  width: 20vw;
+  border-radius: 10%;
+  box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.5), -5px -5px 10px 0px rgba(0, 0, 0, 0.3);
+}
+
+.not p {
+  padding: 0.5vw;
+  font-size: 1.5vw;
+}
+
+.not h3 {
+  background-color:  rgb(216,164,62);
+  font-size: 1.9vw;
+  padding: 1vw;
+  box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.5)
+}
+
+hr {
+  position: absolute;
+  background-color: rgb(39,95,175);
+  height: 7vw;
+  width: calc(100vw - 16px);
+  top: 11vw;
+  border: 0;
+  z-index: 1;
+  box-shadow: 0px -20px 20px 0px rgba(0, 0, 0, 0.5) inset;
+}
+
+.museu {
+  font-family: 'PT Sans', sans-serif;
+  position: relative;
+  background-color: rgb(35,17,24);
+  background-image: url(images/museum.jpg);
+  background-size: 100%;
+  display: flex;
+  align-items: center;
+  height: 60vw;
+  background-repeat: no-repeat;
+}
+
+.museu img {
+  position: absolute;
+  opacity: 0.4;
+  top: 0;
+  width: auto;
+  height: 18vw;
+  z-index: 2;
+  border-bottom-right-radius: 50%;
+  box-shadow: 40px 40px 20px 5px rgba(35,17,24, 0.7);
+}
+
+.museu h2 {
+  position: absolute;
+  background-color: rgb(245,232,72);
+  border-top-left-radius: 50px;
+  color: black;
+  width: 80%;
+  padding: 2vw;
+  font-size: 4vw;
+  text-align: center;
+  align-items: center;
+  bottom: 0;
+  right: 0;
+  box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.5), -5px -5px 10px 0px rgba(0, 0, 0, 0.3);
+}
+
+.maps {
+  width: 60vw;
+  height: 35vw;
+}
+
+.mapa {
+  display: flex;
+}
+
+.mapa img {
+  position: absolute;
+  top: 149vw;
+  right: 0;
+  width: 40vw;
+  height: auto;
+}
+
+.footerDiv {
+  width: 100%;
+  height: 4vw;
+  background-color: rgb(39,95,175);
+  box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.5), -5px -5px 10px 0px rgba(0, 0, 0, 0.3);
+}
+
+footer {
+  font-family: 'PT Sans', sans-serif;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: rgb(237,181,83);
+  box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.5), -5px -5px 10px 0px rgba(0, 0, 0, 0.3);
+}
+
+footer div {
+  width: 20vw;
+  padding: 3vw;
+}
+
+footer div img {
+  width: 5vw;
+}

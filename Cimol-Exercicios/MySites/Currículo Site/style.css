@@ -1,0 +1,65 @@
+#titulo {
+    text-align: center;
+    width: auto;
+    height: auto;
+    scale: 1;
+    line-height: 0.5cm;
+    flex: auto;
+    font-family: Arial;
+}
+
+#infoprincipal {
+    font-size: 20px;
+    line-height: 0.6cm;
+    font-weight: 500;
+}
+
+#curriculo {
+    font-family: Arial;
+    width: auto;
+    height: auto;
+    flex: auto;
+    text-align: left;
+    margin-left: 1.75cm;
+    font-size: 20px;
+}
+
+.lista {
+    margin-left: 1cm;
+}
+
+header {
+    border-radius: 50px;
+    border: 15px solid #172026;
+    background-color: #172026;
+    padding: 50px;
+    margin: 20px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+    
+}
+
+html {
+    background-color: #023535;
+    color: #04BF9D;
+    text-shadow: #172026 1px 1px;
+}
+
+h1 {
+    color: #D92525;
+    font-size: 250%;
+}
+
+hr {
+    width: 80%;
+    border: 5px solid #027373;
+    border-radius: 50px;
+    box-shadow: #172026 4px 4px;
+    
+}
+
+b {
+    text-shadow: #172026 3px 3px;
+    color: #D92525;
+}

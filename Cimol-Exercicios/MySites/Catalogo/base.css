@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans&display=swap');
+
+body {
+    background: rgb(255, 255, 245);
+    color: #000;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.grid-container {
+  display: grid;
+  gap: 1rem;
+  width: 60%;
+  margin: 0 auto;
+
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr))
+}
+
+.grid-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #353535;
+    font-size: 3rem;
+    color: #fff;
+    box-shadow: rgba(3, 8, 20, 0.1) 0px 0.15rem 0.5rem, rgba(2, 8, 20, 0.1) 0px 0.075rem 0.175rem;
+    height: auto;
+    width: 100%;
+    border-radius: 4px;
+    transition: all 500ms;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-size: 100%;
+ }
+
+ .grid-item img {
+  width: 100%;
+  height: 100%
+ }
+  
+.grid-item .legenda {
+  display: none;
+}
+
+.grid-item:hover {
+    box-shadow: rgba(2, 8, 20, 0.1) 0px 0.35em 1.175em, rgba(2, 8, 20, 0.88) 0px 0.175em 0.5em;
+    transform: translateY(-3px) scale(1.1);
+ }
+
+ .grid-item:hover .legenda {
+  display: block;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.5);
+  margin: 0 auto;
+  bottom: 0;
+  height: 100px;
+  width: 100%;
+ }
+
+ h1 {
+  text-align: center;
+  box-shadow: rgba(0, 0, 0, 0.3) 5px 5px 10px;
+ }
